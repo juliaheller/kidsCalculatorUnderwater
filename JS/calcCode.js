@@ -18,7 +18,8 @@ function takeOperator(op){
     }
     else {
         operator = op;
-        document.getElementById("display1").innerHTML= display1 + operator;
+        display1 = display1 + operator;
+        document.getElementById("display1").innerHTML= display1;
     }
 }
    
