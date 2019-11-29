@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Underwater Calculator</title>
     <link href="./CSS/calcStyle.css" rel="stylesheet">
+    <script src="./JS/calcCode.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,8 @@
     <button id="minus" type="button" name="minus"onclick="takeOperator('-')">-</button>
     <button id="multiply" type="button" name="multiply"onclick="takeOperator('*')">*</button>
     <button id="divide" type="button" name="divide"onclick="takeOperator('/')">/</button>
-    <button id="equals" type="button" name="equals"onclick="takeOperator('=')">=</button>
+
+    <button id="equals" type="button" name="equals"onclick="calculate('=')">=</button>
     
     <div class="rocks">
             <button id="reset" type="reset" name="reset">clear</button>
