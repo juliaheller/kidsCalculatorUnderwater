@@ -40,16 +40,27 @@ function calculate(){
     switch (operator){
         case "+":
             document.getElementById("resultDisplay").innerHTML= number1 + number2;
+            resultDisplay = number1 + number2;
             break;
         case "-":
             document.getElementById("resultDisplay").innerHTML= number1 - number2;
+            resultDisplay = number1 - number2;
             break;
         case "*":
             document.getElementById("resultDisplay").innerHTML= number1 * number2;
+            resultDisplay = number1 * number2;
             break;
         case "/":
-            document.getElementById("resultDisplay").innerHTML= number1 - number2;    
+            document.getElementById("resultDisplay").innerHTML= number1 / number2;
+            resultDisplay = number1 / number2;    
     }
- 
+        
+
 }
 
+function clearDisplays(){
+    document.getElementById("display1").innerHTML= "";
+    document.getElementById("display2").innerHTML= ""; 
+    operator = "";
+    document.getElementById("resultDisplay").innerHTML= "";
+}
