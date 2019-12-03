@@ -28,3 +28,8 @@ function takeOperator(op){
     }
 }
    
+function calculate(equals){
+    resultDisplay = eval(display1 + display2);
+    document.getElementById("resultDisplay").innerHTML= resultDisplay;
+}
+

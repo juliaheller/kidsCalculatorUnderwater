@@ -19,6 +19,13 @@
         border-radius: 50%;
         background-color: #fff;
     }
+    #resultDisplay {
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
 
     button {
         border-radius: 50%;
