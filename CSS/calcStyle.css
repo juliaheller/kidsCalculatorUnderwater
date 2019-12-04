@@ -1,5 +1,6 @@
 
     body {
+        display: grid;
         background-color: aqua;
         height: 100%;
     }
@@ -39,7 +40,7 @@
         border-radius: 0%;
     }
 
-    #fish {
+    /*#fish {
         display: block;
         border: 2px solid black;
         width: 150px;
@@ -86,7 +87,8 @@
         border-radius: 50%;
         background-color: black;
         box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.479);
-    }
+    }*/
+
     .rocks {
         display: block;
     }
