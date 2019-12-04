@@ -1,11 +1,35 @@
 
     body {
-        display: grid;
         background-color: aqua;
         height: 100%;
     }
 
+    .calculator-items {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	    grid-template-areas: 
+		"display1"
+        "display2"
+        "number-buttons"
+        "operator-buttons"
+        "equals"
+		"reset"
+        "resultDisplay";
+        grid-template-rows: 100px 100px 250px 50px 20px 40px 50px;
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
     #display1 {
+        grid-area: display1;
+        grid-column: 2 / span 3;
+        grid-row-start: span 3;
+        text-align: center;
         border: 2px solid black;
         width: 100px;
         height: 100px;
@@ -14,18 +38,53 @@
 
     }
     #display2 {
+        grid-area: display2;
+        grid-column: 3 / span 3;
+        text-align: center;
         border: 2px solid black;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         background-color: #fff;
     }
+    
+
+    .number-buttons {
+        grid-area: number-buttons;
+        grid-column: 2 / span 4;
+        grid-row: 1 / span 3;
+    }
+
+    .operator-buttons{
+        grid-area: operator-buttons;
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+
+    #equals {
+        grid-area: equals;
+        grid-column: 6 / span 1;
+
+    }
+
     #resultDisplay {
+        grid-area: resultDisplay;
+        grid-column: 6 / span 2;
         border: 2px solid black;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         background-color: #fff;
+    }
+
+    #reset {
+        grid-area: reset;
+        grid-column: 7;
+        grid-row: 7 / span 1;
+        height: 50px;
+        width: 50px;
+        border-radius: 0%;
     }
 
     button {
@@ -33,13 +92,17 @@
         height: 50px;
         width: 50px;
     }
-
-    #reset {
-        height: 50px;
-        width: 50px;
-        border-radius: 0%;
+    
+    .rocks {
+        display: block;
     }
 
+    .fish {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -800px;
+    }
     /*#fish {
         display: block;
         border: 2px solid black;
@@ -89,7 +152,5 @@
         box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.479);
     }*/
 
-    .rocks {
-        display: block;
-    }
+    
 

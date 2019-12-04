@@ -10,48 +10,43 @@
 </head>
 
 <body>
-
+    
     <h1>Let's calculate!</h1>
    
-    <div id="display1"></div>
-    <div id="display2"></div>
 
-    <button id="zero" type="button" name="zero" onclick="takeNumber(0)">0</button>
-    <button id="one" type="button" name="one" onclick="takeNumber(1)">1</button>
-    <button id="two" type="button" name="two"onclick="takeNumber(2)">2</button>
-    <button id="three" type="button" name="three" onclick="takeNumber(3)">3</button>
-    <button id="four" type="button" name="four" onclick="takeNumber(4)">4</button>
-    <button id="five" type="button" name="five"onclick="takeNumber(5)">5</button>
-    <button id="six" type="button" name="six"onclick="takeNumber(6)">6</button>
-    <button id="seven" type="button" name="seven" onclick="takeNumber(7)">7</button>
-    <button id="eight" type="button" name="eight" onclick="takeNumber(8)">8</button>
-    <button id="nine" type="button" name="nine" onclick="takeNumber(9)">9</button>
+    <div class="calculator-items">
 
-    <button id="plus" type="button" name="plus" onclick="takeOperator('+')">+</button>
-    <button id="minus" type="button" name="minus"onclick="takeOperator('-')">-</button>
-    <button id="multiply" type="button" name="multiply"onclick="takeOperator('*')">*</button>
-    <button id="divide" type="button" name="divide"onclick="takeOperator('/')">/</button>
+        <div id="display1"></div>
+        <div id="display2"></div>
 
-    <button id="equals" type="button" name="equals"onclick="calculate('=')">=</button>
-    
-    <div class="rocks">
-            <button id="reset" type="button" name="reset" onclick="clearDisplays()">clear</button>
+        <div class="number-buttons">
+            <button id="zero" type="button" name="zero" onclick="takeNumber(0)">0</button>
+            <button id="one" type="button" name="one" onclick="takeNumber(1)">1</button>
+            <button id="two" type="button" name="two"onclick="takeNumber(2)">2</button>
+            <button id="three" type="button" name="three" onclick="takeNumber(3)">3</button>
+            <button id="four" type="button" name="four" onclick="takeNumber(4)">4</button>
+            <button id="five" type="button" name="five"onclick="takeNumber(5)">5</button>
+            <button id="six" type="button" name="six"onclick="takeNumber(6)">6</button>
+            <button id="seven" type="button" name="seven" onclick="takeNumber(7)">7</button>
+            <button id="eight" type="button" name="eight" onclick="takeNumber(8)">8</button>
+            <button id="nine" type="button" name="nine" onclick="takeNumber(9)">9</button>
+        </div>
+        <div class="operator-buttons">
+            <button id="plus" type="button" name="plus" onclick="takeOperator('+')">+</button><br>
+            <button id="minus" type="button" name="minus"onclick="takeOperator('-')">-</button><br>
+            <button id="multiply" type="button" name="multiply"onclick="takeOperator('*')">*</button><br>
+            <button id="divide" type="button" name="divide"onclick="takeOperator('/')">/</button>
+         </div>
+
+        <button id="equals" type="button" name="equals"onclick="calculate('=')">=</button>
+        
+        <div class="rocks">
+                <button id="reset" type="button" name="reset" onclick="clearDisplays()">clear</button>
+        </div>
+
+        <div id="resultDisplay"></div>
     </div>
-
-    <div id="resultDisplay"></div>
-
-
-    <!-- <div id="fish">
-        <div class="mouth"></div>
-        <div class="mouth"></div>
-        <div id="dorsalFin"></div>
-        <div id="caudalFin"></div>
-        <div id="fin"></div>
-        <div id="eye"></div>
-    </div>-->
-
-    
-    <div class="document">
+    <div class="fish">
             <svg class="page-2D showed" xmlns="http://www.w3.org/2000/svg" x="0px" y="0" width="100%" height="100%" data-width="1024" data-height="768" viewBox="0 0 1024 768">
         <g class="content">
                 <g class="layers" id="IDI_105to66i">   
@@ -132,6 +127,17 @@
         
     </svg>
     </div>
+    <!-- <div id="fish">
+        <div class="mouth"></div>
+        <div class="mouth"></div>
+        <div id="dorsalFin"></div>
+        <div id="caudalFin"></div>
+        <div id="fin"></div>
+        <div id="eye"></div>
+    </div>-->
+
+    
+    
     
 
 </body>
