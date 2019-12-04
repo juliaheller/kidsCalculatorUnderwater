@@ -4,9 +4,10 @@
         rgba(22, 186, 255, 0.6), rgba(22, 119, 255, 0.6),  rgba(22, 44, 142, 0.6),
         rgba(44, 44, 90, 0.6)), url(../images/the-background-2836575_1920.jpg); 
         height: 100%;
-        font-family: 'Gill Sans';
+        font-family: 'Wendy One', 'sans-serif';
         font-size: 16px;
     }
+
 
 
     #header {
@@ -16,7 +17,7 @@
 
     .calculator-items {
         display: grid;
-        grid-auto-flow: column;
+        grid-auto-flow: row;
         justify-content: center;
         justify-items: start;
         align-content: space-between;
@@ -28,11 +29,13 @@
         "area4"
         "area5"
         "area6"
-        "area7";
-        grid-template-rows: 10px 100px 100px 250px 50px 20px 40px 50px;
+        "area7"
+        "area8";
+        grid-template-rows: 10px 100px 100px 250px 50px 20px 40px 50px 200px;
         grid-gap: 5px;
         justify-items: center;
         margin-top: 100px;
+        
     }
 
     .area1 {
@@ -69,17 +72,29 @@
     }
 
     .area6 {
-        grid-area: resultDisplay;
-        grid-column: 6 / span 2;
-        grid-row: 4 / span2;
+        grid-area: area6;
+        grid-column: 6;
+        grid-row: 3 / span2;
+       
     }
 
     .area7 {
-        grid-area: reset;
-        grid-column: 6;
-        grid-row-start: 6;
+        grid-area: area7;
+        grid-column: 7;
+        grid-row-start: 5;
     }
     
+    .area8 {
+        grid-area: area8;
+        grid-column: 3 / span 2;
+        grid-row: 5 / span 2;
+        
+        align-self: center;
+        justify-self: end;   
+    }
+
+    
+
     #display1 {
         text-align: center;
         border: 1px solid rgba(190, 214, 255, 0.9);
@@ -138,12 +153,12 @@
     }
     
 
-    .fish {
-        display: block;
+    /*#fish {
         height: 100vh;
-        margin-left: 130px;
+        margin-left: 250px;
         margin-top: -680px;
     }
+
     /*#fish {
         display: block;
         border: 2px solid black;
