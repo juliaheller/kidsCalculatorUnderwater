@@ -18,12 +18,17 @@
 
 
     #header {
-        font-weight: bold;
+        
         text-align: center;
         padding: 2px;
         margin: 2px;
         text-shadow: 3px 3px  yellow;
     }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
 
     .calculator-items {
         display: grid;
@@ -42,7 +47,8 @@
         "area5"
         "area6"
         "area7"
-        "area8";
+        "area8"
+        "footer";
         grid-auto-rows: minmax(100px, auto);
         grid-gap: 20px;
         justify-items: center;
@@ -101,17 +107,17 @@
         justify-self: flex-end; 
     }
 
-    .area7 { /* clear */
+    .area7 { /* clear squid */
         grid-area: area7;
         grid-column: 4;
-        grid-row: 6;
+        grid-row: 5;
         align-self: start;
         justify-self: flex-start;  
-        
-
     }
+
     
-    .area8 {/* fish image */
+    
+    #area8 {/* fish image */
         grid-area: area8;
         grid-column: 2 / span 2;
         grid-row: 4 / span 5;
@@ -120,7 +126,6 @@
         min-width: 50%;
         max-width: 100%;  
     }
-
     
 
     #display1 {
@@ -149,6 +154,7 @@
         vertical-align: middle;
         line-height: 150px;
         font-size: 20px;
+        
     }
 
 
@@ -173,7 +179,7 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         margin: 10px;
         border: 1px solid rgba(190, 214, 255, 0.9);
@@ -199,6 +205,24 @@
         background-color: rgba(57, 63, 143, 0.404);
      }
 
+    #reset {
+    width: 200px; height: 200px;
+    }
+
+     #reset:hover {
+        width: 300px;
+        height: auto;
+     }
+
+     .footer {
+        grid-area: footer;
+        grid-column: 1 / span 5;
+        grid-row: 9;
+        align-self: center;
+        justify-self: center; 
+        text-align: center;
+
+     }
 
     
 

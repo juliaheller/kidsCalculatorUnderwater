@@ -9,7 +9,7 @@ function takeNumber(number){
        clearDisplays();   
     }
 
-    if (operator == ""){
+    if (operator == "" && display1.length < 9){
         display1 = display1 + number;
         document.getElementById("display1").innerHTML= display1;
     }
