@@ -80,6 +80,7 @@ function calculate(){
             document.getElementById("resultDisplay").innerHTML= resultDisplay;          
     }
     document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy squid<br>or select a new number."
+    document.getElementById("area8").src='../images/fish1.gif';
 }
 
 function clearDisplays(){ //Clear Button loescht alle Displays
@@ -91,4 +92,5 @@ function clearDisplays(){ //Clear Button loescht alle Displays
     document.getElementById("display2").innerHTML= ""; 
     document.getElementById("resultDisplay").innerHTML= "";
     document.getElementById("bubbleText").innerHTML="Hello there!<br>To start calculating <br>press one of the bubbles with numbers.<br>";
+    document.getElementById("area8").src="../images/fish1.png";
 }
