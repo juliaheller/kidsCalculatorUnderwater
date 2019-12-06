@@ -9,27 +9,41 @@ function takeNumber(number){
        clearDisplays();   
     }
 
-    if (operator == "" && display1.length < 9){
-        display1 = display1 + number;
-        document.getElementById("display1").innerHTML= display1;
+    if (operator == ""){
+        if (display1.length < 10){
+            display1 = display1 + number;
+            document.getElementById("display1").innerHTML= display1;
+        }
+        else {
+            alert("With this calculator you can only use numbers with 10 digits. Choose an operator now.");
+        }
     }
+    
     else {
-        display2 = display2 + number;
-        document.getElementById("display2").innerHTML= display2;
+        if (display2.length < 10){
+            display2 = display2 + number;
+            document.getElementById("display2").innerHTML= display2;
+        }
+        else {
+            alert("With this calculator you can only use numbers with 10 digits. Click the equals bubble now.");
+        }
+        
     }
 }
     
 function takeOperator(op){
-    if (operator !== "") {
+    if (operator !== "" && display1 !== "") { /* Es ist noch kein Operator gewaehlt und im Display1 steht noch nichts.*/
         operator = op;
         display1 = display1.substring(0, display1.length -1);
         display1 = display1 + operator;
         document.getElementById("display1").innerHTML= display1;
     }
     else {
+        if(display1!== ""){
         operator = op;
         display1 = display1 + operator;
         document.getElementById("display1").innerHTML= display1;
+        }
     }
 }
    

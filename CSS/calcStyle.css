@@ -201,7 +201,7 @@
     }
     
 
-    #plus, #minus, #multiply, #divide {
+    #plus,  #multiply,  #equals, #two, #four, #six, #eight, #zero{
         background-color: rgba(57, 63, 143, 0.404);
      }
 
