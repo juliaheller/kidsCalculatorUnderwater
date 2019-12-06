@@ -13,6 +13,7 @@ function takeNumber(number){
         if (display1.length < 10){
             display1 = display1 + number;
             document.getElementById("display1").innerHTML= display1;
+            document.getElementById("bubbleText").innerHTML= "Great,<br> You selected your number(s)! <br> When you have clicked <br> up to 10 numbers, <br> select one of the operator bubbles:<br> (+) (-) (*) or (/).";
         }
         else {
             alert("With this calculator you can only use numbers with 10 digits. Choose an operator now.");
@@ -23,6 +24,7 @@ function takeNumber(number){
         if (display2.length < 10){
             display2 = display2 + number;
             document.getElementById("display2").innerHTML= display2;
+            document.getElementById("bubbleText").innerHTML= "You are almost done!<br> Click on the equals sign: (=)<br> to get your result."
         }
         else {
             alert("With this calculator you can only use numbers with 10 digits. Click the equals bubble now.");
@@ -37,12 +39,14 @@ function takeOperator(op){
         display1 = display1.substring(0, display1.length -1);
         display1 = display1 + operator;
         document.getElementById("display1").innerHTML= display1;
+        
     }
     else {
         if(display1!== ""){
         operator = op;
         display1 = display1 + operator;
         document.getElementById("display1").innerHTML= display1;
+        document.getElementById("bubbleText").innerHTML= "Now thet you have decided on an operator,<br>select again the second number(s) <br> that you want to calculate with.";
         }
     }
 }
@@ -73,9 +77,9 @@ function calculate(){
             break;
         case "/":
             resultDisplay = number1 / number2; 
-            document.getElementById("resultDisplay").innerHTML= resultDisplay; 
-               
+            document.getElementById("resultDisplay").innerHTML= resultDisplay;          
     }
+    document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy squid<br>or select a new number."
 }
 
 function clearDisplays(){ //Clear Button loescht alle Displays
@@ -86,4 +90,5 @@ function clearDisplays(){ //Clear Button loescht alle Displays
     document.getElementById("display1").innerHTML= "";
     document.getElementById("display2").innerHTML= ""; 
     document.getElementById("resultDisplay").innerHTML= "";
+    document.getElementById("bubbleText").innerHTML="Hello there!<br>To start calculating <br>press one of the bubbles with numbers.<br>";
 }

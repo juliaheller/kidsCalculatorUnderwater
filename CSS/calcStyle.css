@@ -113,14 +113,12 @@
         align-self: start;
         justify-self: flex-start;  
     }
-
-    
     
     #area8 {/* fish image */
         grid-area: area8;
         grid-column: 2 / span 2;
-        grid-row: 4 / span 5;
-        align-self: start;
+        grid-row: 3 / span 5;
+        align-self: center;
         justify-self: flex-start; 
         min-width: 50%;
         max-width: 100%;  
