@@ -83,9 +83,10 @@ function calculate(){
             resultDisplay = number1 / number2; 
             document.getElementById("resultDisplay").innerHTML= resultDisplay;          
     }
-}
     document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy octopus<br>or select a new number."
     document.getElementById("area8").src='../images/fish1.gif';
+}
+    
 }
 
 function clearDisplays(){ //Clear Button loescht alle Displays
