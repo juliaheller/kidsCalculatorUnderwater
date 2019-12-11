@@ -57,6 +57,10 @@ function takeOperator(op){
 }*/
 
 function calculate(){
+    if (display2 == ""){
+        alert("You have to choose a second number first.")
+    }
+    else {
     var number1 = display1.substring(0, display1.length -1); //Display1 wird um den Operator gekuerzt und in number 1 umgewandelt
     number1 =  parseInt(number1); // Der String von number 1 wird in eine Zahl umgewandelt
     var number2 = parseInt(display2);
@@ -79,7 +83,8 @@ function calculate(){
             resultDisplay = number1 / number2; 
             document.getElementById("resultDisplay").innerHTML= resultDisplay;          
     }
-    document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy squid<br>or select a new number."
+}
+    document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy octopus<br>or select a new number."
     document.getElementById("area8").src='../images/fish1.gif';
 }
 

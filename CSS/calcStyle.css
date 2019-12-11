@@ -3,6 +3,7 @@
         height: 100%;
         font-family: 'Wendy One', 'sans-serif';
         font-size: 16px;
+        
     }
     
     body {
@@ -160,27 +161,27 @@
         text-align: center;
         border: 1px solid rgba(190, 214, 255, 0.9);
         background-image: linear-gradient(-90deg, rgba(190, 214, 255, 0.1), white);
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         padding: 10px;
         margin: 10px;
         vertical-align: middle;
         line-height: 150px;
-        font-size: 20px;
+        font-size: 30px;
+        
         
     }
     #display2 {
         text-align: center;
-        border: 2px solid blue;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         border: 1px solid rgba(190, 214, 255, 0.9);
         background-image: linear-gradient(-90deg, rgba(190, 214, 255, 0.1), white);
         vertical-align: middle;
         line-height: 150px;
-        font-size: 20px;
+        font-size: 30px;
         
     }
 
@@ -196,7 +197,7 @@
         background-image: linear-gradient(-90deg, rgba(190, 214, 255, 0.1), white);
         vertical-align: middle;
         line-height: 200px;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
 
