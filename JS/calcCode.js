@@ -1,12 +1,12 @@
 var display1 = "";
-var display2 = ""; 
+var display2 = "";
 var operator = "";
 var resultDisplay = "";
 
 
 function takeNumber(number){
     if (resultDisplay !== ""){   // Wenn es kein Ergebnis gibt, dann sind auch alle anderen Displays leer, sobald eine Zahl geklickt wird..
-       clearDisplays();   
+       clearDisplays();
     }
 
     if (operator == ""){
@@ -19,7 +19,7 @@ function takeNumber(number){
             alert("With this calculator you can only use numbers with 10 digits. Choose an operator now.");
         }
     }
-    
+
     else {
         if (display2.length < 10){
             display2 = display2 + number;
@@ -29,17 +29,17 @@ function takeNumber(number){
         else {
             alert("With this calculator you can only use numbers with 10 digits. Click the equals bubble now.");
         }
-        
+
     }
 }
-    
+
 function takeOperator(op){
     if (operator !== "" && display1 !== "") { /* Es ist noch kein Operator gewaehlt und im Display1 steht noch nichts.*/
         operator = op;
         display1 = display1.substring(0, display1.length -1);
         display1 = display1 + operator;
         document.getElementById("display1").innerHTML= display1;
-        
+
     }
     else {
         if(display1!== ""){
@@ -50,7 +50,7 @@ function takeOperator(op){
         }
     }
 }
-   
+
 /*function calculate(equals){
     resultDisplay = eval(display1 + display2); -->eval ist zwar n sich richtig, kann aber leicht gehackt werden
     document.getElementById("resultDisplay").innerHTML= resultDisplay;
@@ -67,36 +67,36 @@ function calculate(){
     switch (operator){
         case "+":
             resultDisplay = number1 + number2;
-            document.getElementById("resultDisplay").innerHTML= resultDisplay; 
+            document.getElementById("resultDisplay").innerHTML= resultDisplay;
             break;
         case "-":
             resultDisplay = number1 - number2;
-            document.getElementById("resultDisplay").innerHTML= resultDisplay; 
-           
+            document.getElementById("resultDisplay").innerHTML= resultDisplay;
+
             break;
         case "*":
-            resultDisplay = number1 * number2;    
-            document.getElementById("resultDisplay").innerHTML= resultDisplay; 
-            
+            resultDisplay = number1 * number2;
+            document.getElementById("resultDisplay").innerHTML= resultDisplay;
+
             break;
         case "/":
-            resultDisplay = number1 / number2; 
-            document.getElementById("resultDisplay").innerHTML= resultDisplay;          
+            resultDisplay = number1 / number2;
+            document.getElementById("resultDisplay").innerHTML= resultDisplay;
     }
-    document.getElementById("bubbleText").innerHTML="Congratulations!<br> Now you can see your result!<br>To start again, press the crumpy octopus<br>or select a new number."
-    document.getElementById("area8").src='../images/fish1.gif';
+    document.getElementById("bubbleText").innerHTML="Congratulations! <br> Now you can see your result!<br>To start again, press the crumpy octopus<br>or select a new number.";
+    document.getElementById("area8").src='images/fish1.gif';
 }
-    
+
 }
 
 function clearDisplays(){ //Clear Button loescht alle Displays
     display1 = "";
-    display2 = ""; 
+    display2 = "";
     operator = "";
     resultDisplay = "";
     document.getElementById("display1").innerHTML= "";
-    document.getElementById("display2").innerHTML= ""; 
+    document.getElementById("display2").innerHTML= "";
     document.getElementById("resultDisplay").innerHTML= "";
     document.getElementById("bubbleText").innerHTML="Hello there!<br>To start calculating <br>press one of the bubbles with numbers.<br>";
-    document.getElementById("area8").src="../images/fish1.png";
+    document.getElementById("area8").src="images/fish1.png";
 }
